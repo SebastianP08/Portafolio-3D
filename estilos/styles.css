@@ -221,6 +221,87 @@ p{
   font-size: 20px;
 }
 
+.formulario-contacto {
+  margin-bottom: 0rem;
+  color: var(--color-white);
+  background: var(--color-grey);
+  padding: 2rem 1.5rem;
+}
+
+.contacto-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.introduccion-formulario h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.introduccion-formulario p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.datos-contacto {
+  margin: 0.35rem 0;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.formulario {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.formulario form {
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.9rem;
+}
+
+.formulario label {
+  font-size:1rem;
+  color: var(--color-black);
+  font-weight: 600;
+  text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 94%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+  font-size: 1rem;
+}
+
+.formulario button {
+  margin-top: 0.4rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+  background: var(--color-grey);
+  }
+
+}
+
+
 .testimonio{
   text-align:left;
   padding: 3.5rem;
@@ -243,10 +324,10 @@ p{
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
+
   .imgLogo{
     width: 100%;
-      }
+  }
 
   .imgS{
     margin-right: 8rem;
@@ -254,11 +335,11 @@ p{
     max-width: 150px;
     border:none;
     border-radius: 3rem;
-      }
+  }
 
   .opciones-menu {
     display: none; /* Esta parte oculta los href en movil */
-    }
+  }
 
   .boton-menu {
     display: block; /* Esto muestra el boton en movil */
@@ -267,25 +348,38 @@ p{
     border:none;
     font-weight: bold;
     font-family: Lato;
-    }
+  }
   
   .inicio{
     flex-direction: column;
     text-align: center;
-      }
+  }
   
   .foto{
     width: 100%;
     height: auto;
     order:2;
-      }
+  }
   
   .foto-perfil{
     width: 100%;
     max-width: 350px;
-      }
+  }
   
-    .recorrido-proyecto{
-      flex-direction: column;
-       }
+  .recorrido-proyecto{
+    flex-direction: column;
+  }
+
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .introduccion-formulario {
+    margin-bottom: 1.2rem;
+  }
+
+  .formulario {
+    padding: 1rem;
+  }
+
 }

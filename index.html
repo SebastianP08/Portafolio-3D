@@ -14,12 +14,14 @@
   <!--Menu principal de la página-->
   <header class="menu">
     <div class="imglogo">
+      <a href="index.html">
     <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+        </a>
     </div>
     <nav class="opciones-menu">
-      <a href="#"> Sobre mi</a>
-      <a href="#"> Mis proyectos</a>
-      <a href="#"> Contactos</a>
+      <a href="páginas/index-about-me.html"> Sobre mi</a>
+      <a href="páginas/index-portafolio.html"> Mis proyectos</a>
+      <a href="#formulario-contacto"> Contactos</a>
     </nav>
     
     <!--Ocultar este botón-->
@@ -35,7 +37,7 @@
       
       <div class= "botones-inicio">
   <button class="boton-principal"> Contratame </button>  
-  <button class="boton-secundario"> Mis proyectos </button>
+  <button class="boton-secundario" onclick="location.href='páginas/index-portafolio.html'"> Mis proyectos </button>
     </div>  
    </div>
     
@@ -89,7 +91,7 @@
     </div>  
   </div>
      <div class="botones-proyecto">
-        <button>Conoce màs proyectos</button>
+        <button onclick="location.href='páginas/index-portafolio.html'">Conoce más proyectos</button>
       </div>
  </section>
   
@@ -106,7 +108,7 @@
     </div>
   </section>
   
-  <section class="formulario-contacto">
+  <section id="formulario-contacto" class="formulario-contacto">
 
     <div class="contacto-contenido">
       <div class="introduccion-formulario">
@@ -154,9 +156,9 @@
         <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
       </div>
       <nav class="opciones-menu-footer">
-        <a href="#">Sobre mi</a>
-        <a href="#">Mis proyectos</a>
-        <a href="#">Contactos</a>
+        <a href="páginas/index-about-me.html">Sobre mi</a>
+        <a href="páginas/index-portafolio.html">Mis proyectos</a>
+        <a href="#formulario-contacto">Contactos</a>
       </nav>
     </div>
     <p class="footer-copy">© 2026 Sebastian Aguilar. Todos los derechos reservados.</p>

@@ -1,8 +1,10 @@
 :root{
   --color-black:#000000;
   --color-white:#FFFFFF;
-  --color-purple:#B100C8;
+  --color-green:#ACC8A2;
   --color-grey:#333333;
+  --color-white-grisasio:#f4f5f8;
+  --color-black-grisasio:#1a1a1a;
 }
 
 body {
@@ -14,22 +16,41 @@ body {
 
 .menu{
   display: flex;
-  align-items: center;
-  padding: 3rem;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
   background: var(--color-grey);
+  flex-wrap: wrap;
+  gap: 1rem;
   
 }
 
 .imgLogo{
-  width: 20%;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+@keyframes deslizamiento {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .imgS{
-  margin-right: 22.5rem;
   width: 100%;
   max-width: 150px;
-  border:none;
+  border: none;
   border-radius: 3rem;
+  animation: deslizamiento 1.5s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+  }
 }
 
 .opciones-menu{
@@ -37,22 +58,25 @@ body {
   width: 80%;
   font-family: Lato;
   font-size: 1.5rem;
-  gap: 13.5rem;
-  
-  
-  & a:hover{
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.opciones-menu a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem;
+  border:none;
+  border-radius: 5rem;
+  color: var(--color-white);
+
+    &:hover{
     background: var(--color-white);
     color: var(--color-black);
   }
-}
-
-a{
-  text-decoration: none;
-  padding: 0.7rem;
-  gap: 4.5rem;
-  border:none;
-  border-radius: 31rem;
-  color: var(--color-white);
 }
 
 .boton-menu{
@@ -60,19 +84,17 @@ a{
 }
 
 .inicio{
-   display: flex;
+  display: flex;
 }
 
-h1{
-  font-size: 4rem;
+/* Títulos - Todos con la fuente de EB Garamond */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", serif;
 }
 
-h2{
-  font-family:EB Garamond;
-}
-
-p{
-   font-family: Lato;
+/* Textos - Todos con la fuente de Lato */
+body, p, label, button, a, input, textarea {
+  font-family: "Lato", sans-serif;
 }
 
 .texto-botones-inicio {
@@ -87,8 +109,9 @@ p{
 }
 
 .nombre{
+  font-size: 4rem;
   margin-top:0rem;
-  color: var(--color-purple);
+  color: var(--color-green);
   font-family:EB Garamond;
 }
 
@@ -112,8 +135,8 @@ p{
     font-family: Lato;
     
     &:hover{
-      background: var(--color-purple);
-      color: #FFFFFF;
+      background: var(--color-green);
+      color: var(--color-white);
       }
     }
 
@@ -128,14 +151,16 @@ p{
     
     &:hover{
       background: var(--color-grey);
-      color: #FFFFFF;
+      color: var(--color-white);
       }
     }
 
 .foto{
-  width: 130%;
+  width: 150%;
+  display: flex;
   height: auto;
   justify-content: center;
+  align-items: center;
 }
 
 .foto-perfil{
@@ -145,50 +170,97 @@ p{
 }
 
 .experiencias {
-  background-color: var(--color-white);
+  background-color: var(--color-white-grisasio);
   color: var(--color-black);
-  padding: 1.2rem;
-  }
+  padding: 3rem 1.2rem;
+  text-align: left;
+}
 
- .texto-experiencias{
-    font-size: 1.1rem;
-  }
+.experiencias h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.texto-experiencias {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--color-white);
+  color: var(--color-black);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 24px var(--color-black-grisasio);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  border: 1px solid var(--color-white-grey);
+}
 
 .portafolio{
-  background-color: var(--color-grey);
-  padding: 3.5rem;
+  background-color: var(--color-black-grisasio);
+  color: var(--color-white-grisasio);
+  padding: 3rem 1rem;
+  text-align: left;
 }
 
 .proyecto-blender{
-  text-align: left;
-  font-size: 1.2rem;
-  padding-bottom: 3.7rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.proyecto-blender h2{
+  text-align: center;
+  font-size: 2.1rem;
+  font-family: EB Garamond;
+  color: var(--color-white);
+  margin-bottom: 0.8rem;
+}
+
+.proyecto-blender p{
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  opacity: 0.88;
 }
 
 .recorrido-proyecto{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 1.2rem;
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  width: 90%;
+  margin: 0 auto 2.3rem;
+  gap: 1.25rem;
 }
 
 .img-blender{
-  width: 100%;
-  height: auto;
-  justify-content: center;
+  background: #0f0f0f;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  box-shadow: 0 8px 20px var(--color-black-grisasio);
+  text-align: left;
 }
 
-.Blender{
+.img-blender img {
   width: 100%;
-  max-width: 330px;
   height: auto;
-  border:none;
-  border-radius: 3rem;
+  border-radius: 0.75rem;
+}
+
+.img-blender p {
+  margin-top: 0.8rem;
+  font-size: 0.98rem;
+  color: var(--color-white);
+}
+
+.img-blender:hover {
+  transform: translateY(-10px);
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .botones-proyecto {
   display: flex;
   justify-content: flex-start;
+  padding: 2rem;
   
   button{
     padding: 1rem;
@@ -210,29 +282,202 @@ p{
 .mis-servicios{
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: 1.2rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
 .especializaciones{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 50px;
-  padding-bottom: 100px;
-  font-size: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.testimonio{
-  text-align:left;
-  padding: 3.5rem;
-  padding-bottom: 5rem;
-  background-color: var(--color-white);
+.especializaciones p {
+  background: var(--color-black-grisasio);
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: transform 0.2s ease, background 0.2s ease;
+  border: 1px solid var(--color-grey)
+}
+
+.especializaciones p:hover {
+  background: var(--color-white-grisasio);
   color: var(--color-black);
-  font-size: 1.2rem;
+  transform: translateY(-7px);
+}
+
+.titulo-servicios {
+  font-size: 1.8rem;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 2rem;
+  color: var(--color-green);
+}
+
+.formulario-contacto {
+  margin-bottom: 0rem;
+  color: var(--color-white);
+  background: var(--color-grey);
+  padding: 2rem 1.5rem;
+}
+
+.contacto-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.introduccion-formulario h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.introduccion-formulario p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.datos-contacto {
+  margin: 0.35rem 0;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.formulario {
+  background: var(--color-white-grisasio);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.formulario form {
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.9rem;
+}
+
+.formulario label {
+  font-size:1rem;
+  color: var(--color-black);
+  font-weight: 600;
+  text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 94%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+  font-size: 1rem;
+}
+
+.formulario button {
+  margin-top: 0.4rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+  background: var(--color-grey);
+  }
+
+}
+
+.testimonio {
+  background-color: var(--color-white-grisasio);
+  color: var(--color-black);
+  padding: 3.5rem 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.testimonio h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  color: #1a202c;
+}
+
+.testimonio-contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 4px solid var(--color-purple);
+  padding-left: 2rem;
+}
+
+.cita {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+  color: #1f2937;
+}
+
+.autor {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
 }
 
 .contactos{
   background-color: var(--color-grey);
   padding: 2rem;
+  color: var(--color-white);
+}
+
+.footer-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.imglogo-footer {
+  width: 120px;
+}
+
+.opciones-menu-footer {
+  display: flex;
+  gap: 1rem;
+  font-family: Lato;
+  font-size: 1rem;
+}
+
+.opciones-menu-footer a {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+}
+
+.footer-copy {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.8;
 }
 
 .numero-correo{
@@ -242,11 +487,11 @@ p{
   gap: 4.3rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
+@media (min-width: 320px) and (max-width: 780px) {
+
   .imgLogo{
     width: 100%;
-      }
+  }
 
   .imgS{
     margin-right: 8rem;
@@ -254,11 +499,11 @@ p{
     max-width: 150px;
     border:none;
     border-radius: 3rem;
-      }
+  }
 
   .opciones-menu {
     display: none; /* Esta parte oculta los href en movil */
-    }
+  }
 
   .boton-menu {
     display: block; /* Esto muestra el boton en movil */
@@ -267,25 +512,38 @@ p{
     border:none;
     font-weight: bold;
     font-family: Lato;
-    }
+  }
   
   .inicio{
     flex-direction: column;
     text-align: center;
-      }
+  }
   
   .foto{
     width: 100%;
     height: auto;
     order:2;
-      }
+  }
   
   .foto-perfil{
     width: 100%;
     max-width: 350px;
-      }
+  }
   
-    .recorrido-proyecto{
-      flex-direction: column;
-       }
+  .recorrido-proyecto{
+    flex-direction: column;
+  }
+
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .introduccion-formulario {
+    margin-bottom: 1.2rem;
+  }
+
+  .formulario {
+    padding: 1rem;
+  }
+
 }

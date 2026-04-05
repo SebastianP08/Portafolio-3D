@@ -14,12 +14,14 @@
   <!--Menu principal de la página-->
   <header class="menu">
     <div class="imglogo">
+      <a href="index.html">
     <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+        </a>
     </div>
     <nav class="opciones-menu">
-      <a href="#"> Sobre mi</a>
-      <a href="#"> Mis proyectos</a>
-      <a href="#"> Contactos</a>
+      <a href="páginas/index-about-me.html"> Sobre mi</a>
+      <a href="páginas/index-portafolio.html"> Mis proyectos</a>
+      <a href="#formulario-contacto"> Contactos</a>
     </nav>
     
     <!--Ocultar este botón-->
@@ -35,7 +37,7 @@
       
       <div class= "botones-inicio">
   <button class="boton-principal"> Contratame </button>  
-  <button class="boton-secundario"> Mis proyectos </button>
+  <button class="boton-secundario" onclick="location.href='páginas/index-portafolio.html'"> Mis proyectos </button>
     </div>  
    </div>
     
@@ -51,17 +53,17 @@
     <br><br>
     
     <p class="texto-experiencias"> Participación en el desarrollo visual de cortometrajes de animación 3D en entornos académicos, enfocado en modelado de personajes y preparación de assets para escena. <br><br> 
-+20 modelos 3D realizados, principalmente personajes y criaturas, explorando tanto estilos estilizados como semi-realistas. <br><br> 
-Exploración en grooming para personajes, enfocado en cabello semi-realista para animación.<br><br>	Colaboración en proyectos grupales de animación, apoyando en la preparación de rigs base y pruebas de movimiento. </p>
+      +20 modelos 3D realizados, principalmente personajes y criaturas, explorando tanto estilos estilizados como semi-realistas. <br><br> 
+      Exploración en grooming para personajes, enfocado en cabello semi-realista para animación.<br><br>	Colaboración en proyectos grupales de animación, apoyando en la preparación de rigs base y pruebas de movimiento. </p>
     
   </section>
   
   <section class="portafolio">
     
     <div class="proyecto-blender">
-      <h2>Proyectos en los que he trabajado</h2>
+      <h2>Proyectos en los que he trabajado</h2><br>
       <p>“Núcleo Lumínico Orgánico” — Escultura 3D con partículas
-Este proyecto consiste en la creación de una pieza orgánica desarrollada en Blender. La composición parte de un núcleo esférico central con pequeños núcleos a su alrededor, junto con partículas para enriquecer más la composición.</p>
+        Este proyecto consiste en la creación de una pieza orgánica desarrollada en Blender. La composición parte de un núcleo esférico central con pequeños núcleos a su alrededor, junto con partículas para enriquecer más la composición.</p><br>
     </div>
     
     <div class="recorrido-proyecto">
@@ -89,7 +91,7 @@ Este proyecto consiste en la creación de una pieza orgánica desarrollada en Bl
     </div>  
   </div>
      <div class="botones-proyecto">
-        <button>Conoce màs proyectos</button>
+        <button onclick="location.href='páginas/index-portafolio.html'">Conoce más proyectos</button>
       </div>
  </section>
   
@@ -106,23 +108,62 @@ Este proyecto consiste en la creación de una pieza orgánica desarrollada en Bl
     </div>
   </section>
   
+  <section id="formulario-contacto" class="formulario-contacto">
+
+    <div class="contacto-contenido">
+      <div class="introduccion-formulario">
+        <h2>Contactame</h2>
+        <p>¿Tienes alguna una idea para un proyecto 3D o de aniamción? Escríbeme y estare más que encantado de conversar contigo.</p>
+        <div class="datos-contacto">
+          <p>+57 311 630 0414</p>
+          <p>saguilarp@unbosque.edu.co</p>
+          <p>Bogotá, Colombia</p>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <form action="#" method="post">
+          <label for="nombre">Primer nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="numero">Número de contacto:</label>
+          <input type="text" id="numero" name="numero" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
     <section class="testimonio">
-      <h2>Testimonio</h2>
-      <p>“Sebastián demuestra un muy buen dominio de las bases del modelado 3D. Sus piezas tienen intención en la forma, buen manejo de volúmenes y una clara atención al detalle. Se nota el tiempo que dedica a pulir cada elemento, desde la silueta hasta los acabados finales. Además, tiene criterio para la iluminación y presentación de sus escenas, lo que potencia aún más el resultado de sus modelos.”
-<br><br>
-        — Laura Méndez, Directora de Arte (proyecto académico)</p>
-    </section>
+  <h2>Testimonio</h2>
+  <div class="testimonio-contenedor">
+    <p class="cita">"Sebastián demuestra un muy buen dominio de las bases del modelado 3D. Sus piezas tienen intención en la forma, buen manejo de volúmenes y una clara atención al detalle. Se nota el tiempo que dedica a pulir cada elemento, desde la silueta hasta los acabados finales. Además, tiene criterio para la iluminación y presentación de sus escenas, lo que potencia aún más el resultado de sus modelos."</p>
+    <p class="autor">— Laura Méndez</p>
+  </div>
+</section>
   
   <footer class="contactos">
-    <h2>Contacto</h2>
-    <div class="numero-correo">
-    <p>3116300414</p>
-    <p>saguilarp@unbosque.edu.co</p>
+    <div class="footer-contenido">
+      <div class="imglogo-footer">
+        <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+      </div>
+      <nav class="opciones-menu-footer">
+        <a href="páginas/index-about-me.html">Sobre mi</a>
+        <a href="páginas/index-portafolio.html">Mis proyectos</a>
+        <a href="#formulario-contacto">Contactos</a>
+      </nav>
     </div>
+    <p class="footer-copy">© 2026 Sebastian Aguilar. Todos los derechos reservados.</p>
   </footer>
 
-    
-  
 </body>
 </html>
 

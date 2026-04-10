@@ -1,8 +1,10 @@
 :root{
   --color-black:#000000;
   --color-white:#FFFFFF;
-  --color-purple:#B100C8;
+  --color-green:#ACC8A2;
   --color-grey:#333333;
+  --color-white-grisasio:#f4f5f8;
+  --color-black-grisasio:#1a1a1a;
 }
 
 body {
@@ -90,7 +92,7 @@ h2{
 
 .titulo{
   margin-top:2rem;
-  color: var(--color-purple);
+  color: var(--color-green);
   font-family:EB Garamond;
   font-family: 1rem;
   font-size:  3rem;
@@ -115,8 +117,8 @@ h2{
     font-family: Lato;
     
     &:hover{
-      background: var(--color-purple);
-      color: #FFFFFF;
+      background: var(--color-green);
+      color: var(--color-white);
       }
     }
 
@@ -132,13 +134,13 @@ h2{
     
     &:hover{
       background: var(--color-grey);
-      color: #FFFFFF;
+      color: var(--color-white);
       }
     }
 
 .flujo-trabajo{
-  background-color: var(--color-grey);
-  color: var(--color-white);
+  background-color: var(--color-white-grisasio);
+  color: var(--color-black);
   padding: 1.2rem;
 }
 
@@ -165,7 +167,7 @@ h2{
 
 .habilidades span {
   padding: 0.5rem 1rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-black);
   border-radius: 1.1rem;
   margin: 0.3rem;
   display: inline-block;
@@ -178,7 +180,8 @@ h2{
 }
 
 .contactos{
-  background-color: var(--color-grey);
+  background-color: var(--color-black-grisasio);
+  color: var(--color-white-grisasio);
   padding: 2rem;
 }
 

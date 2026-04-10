@@ -92,7 +92,7 @@ h2{
   margin-top:2rem;
   color: var(--color-purple);
   font-family:EB Garamond;
-  family-font: 1rem;
+  font-family: 1rem;
   font-size:  3rem;
   font-weight: bold;
 }
@@ -157,7 +157,7 @@ h2{
   flex: 1;
   text-align: left;
 }
-  }
+
 
 .texto-flujo{
   font-size: 1.2rem;
@@ -222,7 +222,7 @@ h2{
       }
  
   .texto-botones-inicio{
-    orden: 1;
+    order: 1;
   }
   
   .foto{

@@ -202,34 +202,68 @@ body, p, label, button, a, input, textarea {
 }
 
 .blocking{
-  display:flex;
-  padding: 3.5rem;
-  background-color: var(--color-black-grisasio);
+  margin-bottom: 0rem;
   color: var(--color-white);
+  background: var(--color-grey);
+  padding: 2rem 2rem;
+  display: block;
 }
 
-.texto-blocking{
-  width: 150%;
-  height: auto;
-  justify-content: center;
+.blocking-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: start;
+  color: var(--color-black);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 24px var(--color-black-grisasio);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  border: 1px solid var(--color-white);
+}
+
+.blocking-contenido h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-white);
   text-align: left;
-  font-size: 1.6rem;
+}
+
+.blocking-contenido p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-white);
+  text-align: left;
 }
 
 .img-blocking{
-  width: 150%;
-  height: 400px;
-  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
   display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-black);
+  border-radius: 16px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  border: 1px solid var(--color-white);
 }
 
-.blocking-pj {
-  width: 150%;
-  max-width: 400px;
-  height: 100%;
-  border:none;
-  border-radius: 3rem;
+.blocking-pj{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 2rem;
+  padding: 1.4rem;
 }
+
 
 .texto-poses{
   width: 150%;
@@ -321,7 +355,6 @@ body, p, label, button, a, input, textarea {
   display: block;
   margin: 0 auto;
   width: 80%;
-  text-decoration: none;
   border-radius: 2rem;
   padding: 1.4rem;
 }
@@ -514,26 +547,21 @@ body, p, label, button, a, input, textarea {
     order: 2;
     text-align: center;
   }
-  
-  .proceso-proyecto{
-    order: 3;
-  }
-  
-  .blocking{
-    width: 50%;
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .texto-blocking{
-    order: 0;
-  }
-  
-  .blocking-pj{
+
+  .img-blocking{
     width: 100%;
     height: auto;
-    order: 1;
+    order:1;
+    }
+
+  .blocking-pj{
+    width: 100%;
+    max-width: 350px;
+    
+  }
+
+  .proceso-proyecto{
+    order: 3;
   }
 
   .img-retopo{

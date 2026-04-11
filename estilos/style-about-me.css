@@ -175,7 +175,7 @@ body, p, label, button, a, input, textarea {
 .flujo-trabajo{
   background-color: var(--color-white-grisasio);
   color: var(--color-black);
-  padding: 1.2rem;
+  padding: 3rem 2rem;
 }
 
 .flujo {
@@ -188,23 +188,50 @@ body, p, label, button, a, input, textarea {
   padding: 4rem 2rem;
 }
 
-.forma-de-trabajar,
-.habilidades {
+.forma-de-trabajar {
   flex: 1;
   text-align: left;
+  margin-bottom: 2rem;
 }
-
 
 .texto-flujo{
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.habilidades span {
-  padding: 0.5rem 1rem;
+.flujo-puntos {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.flujo-item {
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
   border: 1px solid var(--color-black);
-  border-radius: 1.1rem;
-  margin: 0.3rem;
-  display: inline-block;
+  box-shadow: 0 8px 18px var(--color-black-grisasio);
+}
+
+.habilidades-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.habilidades-lista span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.2rem;
+  background: var(--color-white);
+  color: var(--color-black);
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-black);
+  box-shadow: 0 6px 18px var(--color-black-grisasio);
+  font-weight: 600;
 }
 
 .progamas-que-uso{

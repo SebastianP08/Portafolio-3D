@@ -234,10 +234,63 @@ body, p, label, button, a, input, textarea {
   font-weight: 600;
 }
 
-.progamas-que-uso{
+.programas {
+  margin-bottom: 4rem;
+}
+
+.programas h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.programas-subtitulo {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--color-black);
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.progamas-que-uso {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
   padding: 2rem;
+}
+
+.programa-card {
+  display: block;
+  background: var(--color-grey);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  transition: transform 0.25s ease;
+}
+
+.programa-card:hover {
+  transform: translateY(-5px);
+}
+
+.programa-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.programa-card h3 {
+  margin: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.programa-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 .formulario-contacto {

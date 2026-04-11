@@ -100,25 +100,37 @@ body, p, label, button, a, input, textarea {
   font-family: "Lato", sans-serif;
 }
 
+.foto{
+  width: 150%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-perfil{
+  width: 150%;
+  max-width: 500px;
+  height: auto;
+}
+
 .profesion{
   font-family: Lato;
   font-size: 1.3rem;
   padding-bottom: 0rem;
 }
 
-.sobre-mi{
-  font-weight: bold;
-  font-size: 1.3rem;
-  padding-bottom: 0rem;
-}
-
 .titulo{
-  margin-top:2rem;
+  font-size: 4rem;
+  margin-top:0rem;
   color: var(--color-green);
   font-family:EB Garamond;
-  font-family: 1rem;
-  font-size:  3rem;
+}
+
+.sobre-mi{
+  font-size: 1.3rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .texto-botones-inicio {
@@ -131,7 +143,7 @@ body, p, label, button, a, input, textarea {
   justify-content: flex-start;
   }
 
-  .boton-principal{
+.boton-principal{
     padding: 1rem;
     font-size: 1.2rem;
     border:none;
@@ -142,7 +154,7 @@ body, p, label, button, a, input, textarea {
       background: var(--color-green);
       color: var(--color-white);
       }
-    }
+  }
 
 .boton-secundario{
     padding: 1rem;
@@ -334,7 +346,7 @@ body, p, label, button, a, input, textarea {
   gap: 4.3rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 780px) {
   
   .imgLogo{
     width: 100%;
@@ -393,5 +405,17 @@ body, p, label, button, a, input, textarea {
 
   .habilidades {
     order: 2;
+  }
+
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .introduccion-formulario {
+    margin-bottom: 1.2rem;
+  }
+
+  .formulario {
+    padding: 1rem;
   }
 }

@@ -255,14 +255,14 @@ p{
 .img-retopo{
   display: flex;
   width: 30%;
-  higth: auto;
+  height: auto;
   gap: 3rem;
 }
 
 .img-retopo img{
   width: 100%;
-  max-widht: 5px;
-  hight: auto;
+  max-width: 5px;
+  height: auto;
   border:none;
   border-radius: 3rem;
 }
@@ -359,12 +359,13 @@ p{
   
   .img-retopo img{
   width: 100%;
-  max-widht: 5px;
-  hight: auto;
+  max-width: 5px;
+  height: auto;
   border:none;
   border-radius: 3rem;
 }
- 
+  
+}
   
   
   

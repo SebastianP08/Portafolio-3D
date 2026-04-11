@@ -1,8 +1,10 @@
 :root{
   --color-black:#000000;
   --color-white:#FFFFFF;
-  --color-purple:#B100C8;
+  --color-green:#ACC8A2;
   --color-grey:#333333;
+  --color-white-grisasio:#f4f5f8;
+  --color-black-grisasio:#1a1a1a;
 }
 
 body {
@@ -89,7 +91,7 @@ p{
 
 .titulo{
   margin-top:0rem;
-  color: var(--color-purple);
+  color: var(--color-green);
   font-family:EB Garamond;
 }
 
@@ -103,35 +105,35 @@ p{
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
-  }
+}
 
-  .boton-principal{
-    padding: 1rem;
-    font-size: 1.2rem;
-    border:none;
-    font-weight: bold;
-    font-family: Lato;
-    
-    &:hover{
-      background: var(--color-purple);
-      color: #FFFFFF;
-      }
-    }
+.boton-principal{
+  padding: 1rem;
+  font-size: 1.2rem;
+  border:none;
+  font-weight: bold;
+  font-family: Lato;
+
+  &:hover{
+    background: var(--color-green);
+    color: var(--color-white);
+  }
+}
 
 .boton-secundario{
-    padding: 1rem;
-    font-size: 1.2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-white);
+  font-weight: bold;
+  font-family: Lato;
+
+  &:hover{
+    background: var(--color-grey);
     color: var(--color-white);
-    background-color: var(--color-black);
-    border-color: var(--color-white);
-    font-weight: bold;
-    font-family: Lato;
-    
-    &:hover{
-      background: var(--color-grey);
-      color: #FFFFFF;
-      }
-    }
+  }
+}
 
 .pj{
   width: 130%;
@@ -149,8 +151,8 @@ p{
 }
 
 .inicio-proyecto{
-  background-color: var(--color-grey);
-  color: var(--color-white);
+  background-color: var(--color-white-grisasio);
+  color: var(--color-black);
   padding: 3.5rem;
   gap: 4rem;
   display: flex;
@@ -178,7 +180,7 @@ p{
 .blocking{
   display:flex;
   padding: 3.5rem;
-  background-color: var(--color-black);
+  background-color: var(--color-black-grisasio);
   color: var(--color-white);
 }
 
@@ -228,8 +230,8 @@ p{
   width: 93%;
   height: auto;
   display: flex;
-  background-color: var(--color-grey);
-  color: var(--color-white);
+  background-color: var(--color-white-grisasio);
+  color: var(--color-black);
   padding: 3.5rem;
   font-size: 1.6rem;
   text-align: left;

@@ -28,12 +28,31 @@ body {
   flex-shrink: 0;
 }
 
+
+@keyframes deslizamiento {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .imgS{
   width: 100%;
   max-width: 150px;
   border: none;
   border-radius: 3rem;
+  animation: deslizamiento 1.5s ease-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
+  }
 }
+
 
 .opciones-menu{
   display: flex;
@@ -258,7 +277,8 @@ body, p, label, button, a, input, textarea {
 }
 
 .formulario button:hover {
-  background: var(--color-grey);
+  background: var(--color-white-grisasio);
+  color: var(--color-black);
 }
 
 .contactos{

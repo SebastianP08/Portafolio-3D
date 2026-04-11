@@ -85,23 +85,23 @@ body {
 }
 
 .inicio{
-   display: flex;
+  display: flex;
+  padding: 1.3rem;
+  text-align: left;
 }
 
-h1{
-  font-size: 3rem;
+/* Títulos - Todos con la fuente de EB Garamond */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", serif;
 }
 
-h2{
-  font-family:EB Garamond;
+/* Textos - Todos con la fuente de Lato */
+body, p, label, button, a, input, textarea {
+  font-family: "Lato", sans-serif;
 }
 
-p{
-  font-family: Lato;
-  font-size: 1.2rem;
-}
-
-.texto-botones-inicio {
+.texto-botones-inicio,
+.pj {
   padding: 3.5rem;
   text-align: left;
 }
@@ -113,6 +113,7 @@ p{
 }
 
 .titulo{
+  font-size: 4rem;
   margin-top:0rem;
   color: var(--color-green);
   font-family:EB Garamond;
@@ -159,18 +160,18 @@ p{
 }
 
 .pj{
-  width: 130%;
+  width: 150%;
+  display: flex;
   height: auto;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
 }
 
 .foto-pj{
   width: 150%;
   max-width: 500px;
   height: auto;
-  border:none;
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
 
 .inicio-proyecto{
@@ -290,6 +291,86 @@ p{
   height: auto;
   border:none;
   border-radius: 3rem;
+}
+
+.formulario-contacto {
+  margin-bottom: 0rem;
+  color: var(--color-white);
+  background: var(--color-white-grisasio);
+  padding: 2rem 1.5rem;
+}
+
+.contacto-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.introduccion-formulario h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-black);
+  text-align: left;
+}
+
+.introduccion-formulario p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-black);
+  text-align: left;
+}
+
+.datos-contacto {
+  margin: 0.35rem 0;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.formulario {
+  background: var(--color-grey);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.formulario label {
+  font-size:1rem;
+  color: var(--color-white);
+  font-weight: 600;
+  text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 94%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+  font-size: 1rem;
+}
+
+.formulario button {
+  margin-top: 0.4rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-black);
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: var(--color-white-grisasio);
+  color: var(--color-black);
 }
 
 .contactos{
@@ -429,6 +510,18 @@ p{
   border:none;
   border-radius: 3rem;
 }
+
+.contacto-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .introduccion-formulario {
+    margin-bottom: 1.2rem;
+  }
+
+  .formulario {
+    padding: 1rem;
+  }
   
 }
   

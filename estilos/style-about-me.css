@@ -231,7 +231,14 @@ body, p, label, button, a, input, textarea {
   border-radius: 1.2rem;
   border: 1px solid var(--color-black);
   box-shadow: 0 6px 18px var(--color-black-grisasio);
-  font-weight: 600;
+  font-weight: bold;
+  transition: transform 0.25s ease;
+
+  &:hover {
+    background: var(--color-black-grisasio);
+    color: var(--color-white);
+    transform: translateY(-5px);
+  }
 }
 
 .programas {

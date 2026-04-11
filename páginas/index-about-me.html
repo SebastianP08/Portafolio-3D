@@ -1,16 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/style-about-me.css">
 </head>
 <body>
   
   <!--Menu principal de la página-->
   <header class="menu">
     <div class="imglogo">
-    <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+      <a href="../index.html">
+        <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+      </a>
     </div>
     <nav class="opciones-menu">
-      <a href="#"> Sobre mi</a>
-      <a href="#"> Mis proyectos</a>
-      <a href="#"> Contactos</a>
+      <a href="index-about-me.html">Sobre mi</a>
+      <a href="index-portafolio.html">Mis proyectos</a>
+      <a href="#formulario-contacto">Contactos</a>
     </nav>
     
     <button class="boton-menu">Menu</button>
@@ -34,53 +42,107 @@ Me interesa especialmente el proceso completo: desde la conceptualización de la
   
   <section class="flujo-trabajo">
     <div class="flujo">
-    <div class="forma-de-trabajar">
-      <h2>¿Como es mi flujo de trabajo?</h2>
-      <p class?"texto-flujo"> Mi flujo de trabajo se centra en transformar ideas en assets 3D optimizados. Empiezo primero con el concept art y diferentes diseños que puede tener un personaje, para pasar al modelado, darle detalles con el esculpido, y finalmente aplicar técnicas de retopología para optimizar los modelos tenerlos listos para su animación y uso en tiempo real. Participación en el desarrollo visual de cortometrajes de animación 3D en entornos académicos, enfocado en modelado de personajes y preparación de assets para escena. <br><br> 
-+20 modelos 3D realizados, principalmente personajes y criaturas, explorando tanto estilos estilizados como semi-realistas. <br><br> 
-Exploración en grooming para personajes, enfocado en cabello semi-realista para animación.<br><br>	Colaboración en proyectos grupales de animación, apoyando en la preparación de rigs base y pruebas de movimiento.</p> <br><br>
-    </div>
-    
-    <div class="habilidades">
-      <h2>Habilidades tecnicas</h2>
-      <span>Modelado 3D</span>
-      <span>Esculpido 3D</span>
-      <span>Retopología</span>
-      <span>Grooming</span>
-    </div>
+      <div class="forma-de-trabajar">
+        <h2>¿Como es mi flujo de trabajo?</h2>
+        <p class="texto-flujo">
+          Mi proceso parte del concept art y el diseño inicial. Luego continúo con el modelado base y el esculpido de detalles, siempre cuidando formas y proporciones.
+        </p>
+        <p class="texto-flujo">
+          Finalmente aplico retopología y optimizo el modelo para animación o uso en tiempo real, asegurando buena topología y rendimiento.
+        </p>
+
+      <div class="flujo-puntos">
+        <div class="flujo-item"><strong>Concepto:</strong> Busco diversas referencias para guiarme de mejor manera.</div>
+        <div class="flujo-item"><strong>Modelado:</strong> Comienzo con un blocking del personaje para tener la forma base.</div>
+        <div class="flujo-item"><strong>Esculpido:</strong> Aplico más detalle al modelado.</div>
+        <div class="flujo-item"><strong>Retopología:</strong> Se mejora la topología del modelado para tener una mejor optimización y que por ende sea posible hacer el rigging y la animación.</div>
       </div>
+    
+      <div class="habilidades-lista">
+        <h2>Habilidades tecnicas</h2>
+        <span>Modelado 3D</span>
+        <span>Esculpido 3D</span>
+        <span>Retopología</span>
+        <span>Grooming</span>
+      </div>
+    </div>
   </section>
   
   <section class="programas">
-    <div>
-     <h2>Los programas que utilizo</h2>
-    </div>
-    
-    <div class="progamas-que-uso">
-      <div>
-      <h3> Maya - Blender - Modo</h3>
-      <p> Para empezar el Blocking y el modelado</p>
-       </div>
-      <div>
-      <h3> ZBrush - Blender - MudBox</h3>
-      <p> Para esculpir los detalles de los personajes</p>
-       </div>
-      <div>
-      <h3> Maya </h3>
-      <p> Para optimizar a los personajes con el uso de la retopología</p>
-        </div>    
-      <div>
-      <h3> Houdini </h3>
-      <p> Para grooming de personajes</p>
-        </div>
-    </div>
+  <div>
+    <h2>Los programas que utilizo</h2>
+    <p class="programas-subtitulo">Herramientas para modelado, escultura, grooming y retopología.</p>
+  </div>
+
+  <div class="progamas-que-uso">
+    <a class="programa-card" href="https://www.autodesk.com/products/maya" target="_blank" rel="noreferrer">
+      <img src="../multimedia/logo-maya.png" alt="Maya">
+      <h3>Maya</h3>
+      <p>Modelado base y retopología.</p>
+    </a>
+    <a class="programa-card" href="https://www.blender.org" target="_blank" rel="noreferrer">
+      <img src="../multimedia/logo-blender.png" alt="Blender">
+      <h3>Blender</h3>
+      <p>Modelado, esculpido y render.</p>
+    </a>
+    <a class="programa-card" href="https://pixologic.com/zbrush/" target="_blank" rel="noreferrer">
+      <img src="../multimedia/logo-zbrush.png" alt="ZBrush">
+      <h3>ZBrush</h3>
+      <p>Esculpido de alta resolución.</p>
+    </a>
+    <a class="programa-card" href="https://www.sidefx.com" target="_blank" rel="noreferrer">
+      <img src="../multimedia/logo-houdini.png" alt="Houdini">
+      <h3>Houdini</h3>
+      <p>Grooming y procesamiento avanzado.</p>
+    </a>
+  </div>
+</section>
     
   </section>
-   <footer class="contactos">
-    <h2>Contacto</h2>
-    <div class="numero-correo">
-    <p>3116300414</p>
-    <p>saguilarp@unbosque.edu.co</p>
+  <section id="formulario-contacto" class="formulario-contacto">
+    <div class="contacto-contenido">
+      <div class="introduccion-formulario">
+        <h2>Contactame</h2>
+        <p>¿Tienes alguna idea para un proyecto 3D o de animación? Escríbeme y estaré más que encantado de conversar contigo.</p>
+        <div class="datos-contacto">
+          <p>+57 311 630 0414</p>
+          <p>saguilarp@unbosque.edu.co</p>
+          <p>Bogotá, Colombia</p>
+        </div>
+      </div>
+
+      <div class="formulario">
+        <form action="#" method="post">
+          <label for="nombre">Primer nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="numero">Número de contacto:</label>
+          <input type="text" id="numero" name="numero" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
     </div>
+  </section>
+   <footer class="contactos">
+    <div class="footer-contenido">
+      <div class="imglogo-footer">
+        <a href="../index.html">
+          <img class="imgS" src="https://i.pinimg.com/474x/1b/79/0b/1b790b24b15d40d69584543e600649d8.jpg" alt="img-S">
+        </a>
+      </div>
+      <nav class="opciones-menu-footer">
+        <a href="index-about-me.html">Sobre mi</a>
+        <a href="index-portafolio.html">Mis proyectos</a>
+        <a href="#formulario-contacto">Contactos</a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2026 Sebastian Aguilar. Todos los derechos reservados.</p>
   </footer>
 </body>

@@ -112,11 +112,25 @@ body, p, label, button, a, input, textarea {
   padding-bottom: 0rem;
 }
 
+@keyframes gradientFlow {
+  0% {
+    background-position: 0%
+  }
+  100% {
+    background-position: 300%
+  }
+}
+
 .titulo{
   font-size: 4rem;
   margin-top:0rem;
   color: var(--color-green);
   font-family:EB Garamond;
+  background: linear-gradient(90deg, #38bdf8, #818cf8, var(--color-green), #38bdf8);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientFlow 6s linear infinite;
 }
 
 .introduccion{

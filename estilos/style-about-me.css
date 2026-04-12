@@ -120,11 +120,28 @@ body, p, label, button, a, input, textarea {
   padding-bottom: 0rem;
 }
 
+@keyframes slideReveal {
+  0% {
+   transform: translateY(100%);
+    opacity: 0
+  }
+  50% {
+   transform: translateY(0);
+   opacity: 1
+  }
+  100% {
+   transform: translateY(-1%);
+    opacity: 1
+    }
+}
+
 .titulo{
   font-size: 4rem;
   margin-top:0rem;
   color: var(--color-green);
   font-family:EB Garamond;
+  display: inline-block;
+  animation: slideReveal 4s  ease-out forwards;
 }
 
 .sobre-mi{
@@ -250,7 +267,7 @@ body, p, label, button, a, input, textarea {
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: var(--color-white);
+  color: var(--color-green);
 }
 
 .programas-subtitulo {

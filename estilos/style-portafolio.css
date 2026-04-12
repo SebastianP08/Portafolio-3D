@@ -201,6 +201,83 @@ body, p, label, button, a, input, textarea {
   
 }
 
+.inicio-proyecto {
+  gap: 1.5rem;
+  padding: 2rem;
+  display: block;
+}
+
+.texto-proyecto {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.inicio-proyecto h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.inicio-proyecto p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--color-black);
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.proceso-proyecto, .proceso-proyecto-img {
+  display: block;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  padding: 1.4rem;
+  transition: transform 0.25s ease;
+  border-radius: 16px;
+  padding: 1.8rem;
+  line-height: 1.7;
+  border: 1px solid var(--color-black-grisasio);
+  box-shadow: 0 8px 24px var(--color-black-grisasio);
+}
+
+.proceso-proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proceso-proyecto-img:hover {
+  transform: translateY(-5px);
+}
+
+.proceso-proyecto-img{
+  display: flex;
+  gap: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: start;
+  color: var(--color-black);
+  border-radius: 16px;
+  padding: 1.8rem;
+  line-height: 1.7;
+}
+
+.proceso-proyecto img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .blocking{
   margin-bottom: 0rem;
   color: var(--color-white);
@@ -300,7 +377,7 @@ body, p, label, button, a, input, textarea {
 
 .img-esculpido{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 60%;
   margin: 0 auto 2.3rem;
   gap: 1.25rem;
@@ -319,7 +396,7 @@ body, p, label, button, a, input, textarea {
   border:none;
   border-radius: 3rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 0.75rem;
 }
 
@@ -359,8 +436,8 @@ body, p, label, button, a, input, textarea {
 .img-retopo{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.2rem;
   background: var(--color-black-grisasio);
   padding: 0.5rem;
   height: auto;
@@ -558,15 +635,6 @@ body, p, label, button, a, input, textarea {
     flex-direction: column;
     gap: 1rem;
   }
-  
-  .plan-proyecto{
-    order: 1;
-  }
-  
-  .concept-art{
-    order: 2;
-    text-align: center;
-  }
 
   .img-blocking{
     width: 100%;
@@ -578,10 +646,6 @@ body, p, label, button, a, input, textarea {
     width: 100%;
     max-width: 350px;
     
-  }
-
-  .proceso-proyecto{
-    order: 3;
   }
 
   .img-retopo{
